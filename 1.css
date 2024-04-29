@@ -1,0 +1,60 @@
+html, body, #map {
+    width: 100%; height: 100%; padding: 0; margin: 0;
+}
+a {
+    color: #04b; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+a:visited {
+    color: #04b; /* Цвет посещённой ссылки */
+}
+a:hover {
+    color: #f50000; /* Цвет ссылки при наведении на нее курсора мыши */
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    z-index: 4;
+    position: relative;
+    bottom: 132px;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 99%; /* Full-width */
+    height: 2%; /* Specified height */
+    border-radius: 50px;
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    z-index: 1;
+    
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 110px; /* Set a specific slider handle width */
+    height: 100px; /* Slider handle height */
+    border-radius: 100%;
+    background: #50035f; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    border-radius: 100%;
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
